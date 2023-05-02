@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Outfit:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #ad73c9, #501163);
+    color: aliceblue;
+    text-align: center;
+    padding-top: 30px;
+}
+#task-container{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* tasks form */
+
+#task-header{
+    margin-top: 40px;
+}
+
+#add-task-form{
+    position: relative;
+}
+
+#add-task-form input{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    font-size: 18px;
+    width: 50%;
+}
+
+#add-task-form input:placeholder{
+    color:rgb(106, 69, 139)
+}
+
+#add-task-form input:focus{
+    outline: none;
+}
+
+#add-btn{
+    position: relative;
+    background: #fff;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: .5s;
+    width: 60px;
+    height: 53px;
+    top: 0;
+    right: 0;
+    padding-top: 3px;
+}
+
+add-btn:hover{
+    background-color: #fff;
+    color: #fff;
+}
+
+ion-icon{
+    font-size: 25px;
+}
+
+/* task container */
+
+#task-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+
+
+#task-list li{
+    text-align: left;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    border-bottom: 3px solid black;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    padding-left: 15px;
+    transition: .5s;
+    font-weight: bold;
+    width: 50%;
+    align-items: center;
+}
+
+#task-list li span{
+    font-size: 18px;
+}
+
+#task-list ion-icon{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    transition: .5s;
+    cursor: pointer;
+    width: 30px;
+    padding: 5px;
+}
+
+.done-btn{
+    right: 40px;
+}
+
+.done-btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 76);
+}
+
+.remove-btn{
+    right: 0;
+}
+
+.remove-btn:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 0, 0);
+}
+
+.hide{
+    display: none;
+}
+
+#task-list li.done{
+    background-color: rgb(156, 104, 177);
+    color: white;
+    text-decoration: line-through;
+}
